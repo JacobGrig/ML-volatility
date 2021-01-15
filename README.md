@@ -23,7 +23,7 @@ Save the path to the installed Anaconda (_path_to_Anaconda_).
 
 - Create _volatility_ environment by executing the following command:
 
-`conda create --name volatility python=3.8.6`
+`conda create --name volatility python=3.9.1`
 
 - Switch to this environment, using the following command:
 
@@ -39,19 +39,9 @@ or `products` to install separately _ml_volatility_ package).
 
 #### Usage:
 
-- You can run tests, using the following command in Anaconda Prompt:
+- You can run the program, using the following command in Anaconda Prompt:
 
-`ml_volatility testperf`
-
-and the results will be stored in the folder
-_desired_folder/ml_volatility/ml_volatility/data/test/results_. 
-
-If you want to test the package on your own financial data, please put the file into the folder
-_desired_folder/ml_volatility/ml_volatility/data/test/csv_.
-
-- Or you can run the product:
-
-`ml_volatility calcprod`
+`ml_volatility run`
 
 and the results will be stored in the folder
-_desired_folder/ml_volatility/ml_volatility/data/full/results_.
+_desired_folder/ml_volatility/ml_volatility/data_. 
