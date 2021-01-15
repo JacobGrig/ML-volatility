@@ -2,17 +2,16 @@ channels:
   - conda-forge
   - pytorch
 dependencies:
-  - pytorch::pytorch==1.7.0
-  - pytorch::torchvision==0.8.1
-  - conda-forge::tabulate==0.8.7
-  - conda-forge::overrides==3.1.0
+  - pytorch::pytorch==1.7.1
   - conda-forge::numpy==1.19.4
-  - conda-forge::pandas==1.1.4
-  - pytorch::torchtext==0.8.0
-  - conda-forge::tqdm==4.51.0
+  - conda-forge::pandas==1.2.0
+  - conda-forge::tqdm==4.55.1
   - conda-forge::jupyter==1.0.0
-  - pip==20.2.4
+  - conda-forge::scipy==1.6.0
+  - conda-forge::scikit-learn==0.24.0
+  - conda-forge::matplotlib==3.3.3
+  - pip==20.3.3
   - setuptools==49.6.0
-  - python==3.8.6
+  - python==3.9.1
   - pip:
     - black

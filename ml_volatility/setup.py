@@ -17,15 +17,14 @@ setup(
     packages=[NAME],
     install_requires=[
         "torch",
-        "torchvision",
-        "tabulate",
-        "overrides",
         "numpy",
+        "scipy",
         "pandas",
-        "torchtext",
         "tqdm",
         "jupyter",
         "black",
+        "scikit-learn",
+		"matplotlib"
     ],
     entry_points={"console_scripts": [f"{SERVICE}={NAME}.cli:cli_strategy"]},
     dependency_links=[],
