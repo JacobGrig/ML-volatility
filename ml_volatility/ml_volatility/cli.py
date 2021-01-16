@@ -48,7 +48,7 @@ def cli_strategy() -> None:
         help="Choose one of possible strategies. To see help for each of the strategies "
         'run with "-h" argument e.g.\n'
         f"{MAIN_CMD_NAME} run -h",
-        choices=("calcprod", "testperf"),
+        choices=("run",),
     )
     args = argument_parser.parse_args(args=sys.argv[1:2])
     strategy_name_cli_func_map: dict = {
