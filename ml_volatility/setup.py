@@ -24,7 +24,8 @@ setup(
         "jupyter",
         "black",
         "scikit-learn",
-		"matplotlib"
+        "matplotlib",
+		"statsmodels",
     ],
     entry_points={"console_scripts": [f"{SERVICE}={NAME}.cli:cli_strategy"]},
     dependency_links=[],

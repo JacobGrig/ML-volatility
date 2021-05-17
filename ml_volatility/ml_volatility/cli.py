@@ -1,7 +1,9 @@
 import argparse
 import sys
 from pathlib import Path
-from ml_volatility.algos.extractor import Extractor
+# from ml_volatility.algos.extractor import Extractor
+# from ml_volatility.algos.extractor import ExtractorWithJumps
+from ml_volatility.algos.extractor import FinalExtractor
 
 
 # Default paths for intermediate output files, meta paths
@@ -23,7 +25,9 @@ def run(data_path) -> None:
 
     save_link = DATA_PATH_RESULTS
 
-    extractor_obj = Extractor(data_path, save_link)
+    # extractor_obj = Extractor(data_path, save_link)
+    # extractor_obj = ExtractorWithJumps(data_path, save_link)
+    extractor_obj = FinalExtractor(data_path, save_link)
     extractor_obj.run()
 
 
